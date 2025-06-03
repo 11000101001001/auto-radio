@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         * {
             box-sizing: border-box;
@@ -70,6 +71,15 @@
             margin: auto;
         }
 
+        .panel {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        }
+
         .content h1 {
             color: #d32f2f;
             font-size: 2.2rem;
@@ -88,10 +98,22 @@
             padding-left: 1.2rem;
             border-left: 3px solid #d32f2f;
             margin: 1.5rem 0;
+            list-style: none;
         }
 
         ul li {
-            margin-bottom: 0.6rem;
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        ul li::before {
+            content: "\f058";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #d32f2f;
         }
 
         .benefits {
@@ -181,18 +203,22 @@
     </header>
 
     <div class="content">
-        <img src="https://assets.onecompiler.app/43ka45dqe/43kkp2gqy/Lo%20mejor%20del%20(1).png" alt="Lo mejor del sonido" class="highlight-image">
+        <div class="panel">
+            <img src="https://assets.onecompiler.app/43ka45dqe/43kkp2gqy/Lo%20mejor%20del%20(1).png" alt="Lo mejor del sonido" class="highlight-image">
 
-        <p>En PC House, tenemos la mejor selección de autoradios, parlantes y accesorios para que cada viaje tenga un sonido perfecto.</p>
-        <ul>
-            <li>Autoradios con Bluetooth para conectividad sin cables</li>
-            <li>Pantallas táctiles con diseño moderno y funciones avanzadas</li>
-            <li>Amplificadores y parlantes para sonido envolvente y potencia extra</li>
-            <li>Accesorios y conectores para una instalación fácil y segura</li>
-        </ul>
+            <p>En PC House, tenemos la mejor selección de autoradios, parlantes y accesorios para que cada viaje tenga un sonido perfecto.</p>
+            <ul>
+                <li>Autoradios con Bluetooth para conectividad sin cables</li>
+                <li>Pantallas táctiles con diseño moderno y funciones avanzadas</li>
+                <li>Amplificadores y parlantes para sonido envolvente y potencia extra</li>
+                <li>Accesorios y conectores para una instalación fácil y segura</li>
+            </ul>
+        </div>
 
-        <div class="benefits">
-            Envíos rápidos &nbsp;&nbsp; Pagos seguros &nbsp;&nbsp; Las mejores marcas
+        <div class="benefits panel">
+            <i class="fas fa-truck"></i> Envíos rápidos &nbsp;&nbsp;
+            <i class="fas fa-lock"></i> Pagos seguros &nbsp;&nbsp;
+            <i class="fas fa-star"></i> Las mejores marcas
         </div>
     </div>
 
